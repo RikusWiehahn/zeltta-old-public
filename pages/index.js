@@ -23,6 +23,7 @@ const App = (props) => {
 
 const Layout = (props) => {
   const { style, children } = props;
+  const innerStyle = props.innerStyle ? props.innerStyle : {};
   const InnerDiv = styled.div({
     ...style,
     width: '1000px',
@@ -35,6 +36,7 @@ const Layout = (props) => {
   });
   return (
     <Row style={{
+      ...innerStyle,
       flex: 1,
       flexDirection: 'row',
       display: 'flex',
@@ -87,7 +89,7 @@ const HeroSection = (props) => {
         
       }}>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flex: 1, padding: '20px' }}>
-          <Heading style={{ color: '#fff' }}> Inspired <br/> Technology <br/> Products</Heading>
+            <Heading style={{ color: '#fff' }}> Inspired <br/> Technology <br/> Products</Heading>
         </div>
         </Layout>
       </Row>
@@ -130,14 +132,14 @@ const Index = () => {
       <Logo />
         <HeroSection />
         <CutPathDiv top={'-12vh'} backgroundColor={'#4400ff'}>
-          <Layout style={{
-              
+          <Layout innerStyle={{
+              paddingTop: '35px'
             }}>
-            <div style={{ flex: 1, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', top: '30px' }}>
+            <div style={{ flex: 1, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <Heading style={{ color: '#fff' }}>Design first</Heading>
               <Paragraph style={{ color: '#fff' }}>Great products always start with an obsessive focus on end users. Excellence thereafter becomes the result of well-structured planning, design, measurement and iteration.</Paragraph>
             </div>
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img src="/static/phone.png" alt="phone design image"/>
             </div>
           </Layout>
