@@ -22,7 +22,7 @@ class ShowEmail extends React.Component {
       )
     }
     return (
-      <Button label="Show" onClick={() => this.setState((prevState) => ({ show: prevState.show ? false : true }))}/>
+      <Button label="Show Contact" onClick={() => this.setState((prevState) => ({ show: prevState.show ? false : true }))}/>
     )
   }
 }
