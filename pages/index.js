@@ -126,6 +126,19 @@ const FooterSection = (props) => {
   )
 }
 
+const PhoneImageDiv = styled.div({
+  flex: 1, 
+  display: 'flex', 
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  '@media screen and (max-width: 1000px)': {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+})
+
 const Index = () => {
   return (
     <App>
@@ -138,9 +151,9 @@ const Index = () => {
               <Heading style={{ color: '#fff' }}>Design first</Heading>
               <Paragraph style={{ color: '#fff' }}>Great products always start with an obsessive focus on end users. Excellence thereafter becomes the result of well-structured planning, design, measurement and iteration.</Paragraph>
             </div>
-            <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src="/static/phone.png" alt="phone design image"/>
-            </div>
+            <PhoneImageDiv>
+              <img src="/static/phone.png" alt="phone design image" style={{ height: '690px', width: '430px' }}/>
+            </PhoneImageDiv>
           </Layout>
         </CutPathDiv>
         <CutPathDiv top={'-24vh'} backgroundColor={'#ff0086'}>
