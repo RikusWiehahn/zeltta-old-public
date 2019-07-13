@@ -166,7 +166,7 @@ const Index = () => {
               <Paragraph style={{ color: '#000' }}>Choose any 3rd party integrations you'd like in order to provide a richer feature set for your users.</Paragraph>
             </Col>
             <Col style={{ flex: 1 }}>
-              <img src="/static/integrations.svg" alt="integrations graphic" style={{ height: '40vh', width: '40vh', minHeight: '200px', minWidth: '200px' }} />
+              <img src="/static/plugins.svg" alt="integrations graphic" style={{ height: '40vh', width: '40vh', minHeight: '200px', minWidth: '200px' }} />
             </Col>
           </Layout>
         </CutPathDiv>
