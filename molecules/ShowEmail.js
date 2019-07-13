@@ -18,7 +18,7 @@ class ShowEmail extends React.Component {
     const { show } = this.state;
     if (show) {
       return (
-        <Paragraph style={{ color: '#fff' }}>{this.renderContactInfo()}</Paragraph>
+        <a style={{ color: '#fff' }} href={`mailto:${this.renderContactInfo()}?subject=Hi there!`}><Paragraph style={{ color: '#fff' }}>{this.renderContactInfo()}</Paragraph></a>
       )
     }
     return (
