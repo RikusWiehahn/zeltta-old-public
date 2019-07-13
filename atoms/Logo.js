@@ -14,7 +14,7 @@ const Logo = () => {
     }}>
       <div style={{
         width: '1000px',
-        '@media screen and (max-width: 1000px)': {
+        '@media screen and (maxWidth: 1000px)': {
           width: '100vw',
         }
       }}>

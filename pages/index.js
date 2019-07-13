@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Logo from '../atoms/Logo';
-import ShowEmail from '../atoms/ShowEmail';
+import ShowEmail from '../molecules/ShowEmail';
 import { Heading, Paragraph } from '../atoms/Fonts';
 
 const App = (props) => {
