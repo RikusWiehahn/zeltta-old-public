@@ -133,7 +133,6 @@ const Index = () => {
         <HeroSection />
         <CutPathDiv top={'-12vh'} backgroundColor={'#4400ff'}>
           <Layout innerStyle={{
-              paddingTop: '35px'
             }}>
             <div style={{ flex: 1, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <Heading style={{ color: '#fff' }}>Design first</Heading>
