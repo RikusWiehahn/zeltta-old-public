@@ -1,4 +1,12 @@
 import React from 'react';
+import styled from '@emotion/styled';
+
+const InnerDiv = styled.div({
+  width: '1000px',
+  '@media screen and (maxWidth: 1000px)': {
+    width: '100vw',
+  }
+});
 
 const Logo = () => {
   return (
@@ -7,19 +15,13 @@ const Logo = () => {
       alignItems: 'center',
       justifyContent: 'center',
       position: 'fixed', 
-      top: '20px',
-      left: '20px',
-      width: '100vw',
-      zIndex: 2,
+      padding: '20px',
+      zIndex: 1,
+      width: '100%'
     }}>
-      <div style={{
-        width: '1000px',
-        '@media screen and (maxWidth: 1000px)': {
-          width: '100vw',
-        }
-      }}>
+      <InnerDiv>
         <img src="/static/zeltta-logo.svg" alt="zeltta logo" style={{ height: '30px'  }} />
-      </div>
+      </InnerDiv>
     </div>
   )
 }

@@ -12,6 +12,8 @@ const App = (props) => {
     <Container style={{ backgroundColor: '#000' }}>
       <div style={{
         height: '500vh',
+        width: '100vw',
+        overflow: 'hidden'
       }}>
       {props.children}
       </div>
@@ -136,7 +138,7 @@ const Index = () => {
               <Paragraph style={{ color: '#fff' }}>Great products always start with an obsessive focus on end users. Excellence thereafter becomes the result of well-structured planning, design, measurement and iteration.</Paragraph>
             </div>
             <div style={{ flex: 1 }}>
-              <img src="/static/phone.png" alt="stack logo" style={{ height: '80vh', width: '50vh', minHeight: '400px', minWidth: '250px'  }} />
+              <img src="/static/phone.png" alt="stack logo" style={{ height: '80vh', width: '50vh', minHeight: '320px', minWidth: '200px'  }} />
             </div>
           </Layout>
         </CutPathDiv>
@@ -150,7 +152,7 @@ const Index = () => {
               <Paragraph style={{ color: '#fff' }}>Choose whichever front-end, hardware and features you want to provide for your users.</Paragraph>
             </Col>
             <Col style={{ flex: 1 }}>
-              <img src="/static/stack.svg" alt="stack logo" style={{ height: '40vh', width: '40vh', minHeight: '300px', minWidth: '300px'  }} />
+              <img src="/static/stack.svg" alt="stack logo" style={{ height: '40vh', width: '40vh', minHeight: '200px', minWidth: '200px'  }} />
             </Col>
           </Layout>
         </CutPathDiv>
@@ -164,7 +166,7 @@ const Index = () => {
               <Paragraph style={{ color: '#000' }}>Choose any 3rd party integrations you'd like in order to provide a richer feature set for your users.</Paragraph>
             </Col>
             <Col style={{ flex: 1 }}>
-              <img src="/static/integrations.svg" alt="stack logo" style={{ height: '40vh', width: '40vh', minHeight: '300px', minWidth: '300px'  }} />
+              <img src="/static/integrations.svg" alt="integrations graphic" style={{ height: '40vh', width: '40vh', minHeight: '200px', minWidth: '200px' }} />
             </Col>
           </Layout>
         </CutPathDiv>
