@@ -9,10 +9,9 @@ import { Heading, Paragraph } from '../atoms/Fonts';
 
 const App = (props) => {
   return (
-    <Container style={{ backgroundColor: '#000', position: 'fixed', top: '0px', left: '0px', right: '0px', bottom: '0px', overflowY: 'scroll' }}>
+    <Container style={{ backgroundColor: '#000' }}>
       <div style={{
         height: '500vh',
-        overflowY: 'hidden',
       }}>
       {props.children}
       </div>
