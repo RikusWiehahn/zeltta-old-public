@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Montserrat:300,800&display=swap" rel="stylesheet" />
           <link rel="icon" type="image/png" href="../static/favicon.png" />
         </Head>
-        <body style={{ margin: '0px' }}>
+        <body style={{ margin: '0px', backgroundColor: '#000' }}>
           <Main />
           <NextScript />
         </body>

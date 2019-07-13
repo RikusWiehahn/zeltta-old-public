@@ -84,9 +84,9 @@ const HeroSection = (props) => {
     }}>
       <Layout style={{
         display: 'flex',
-        alignItems: 'center',
+        
       }}>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flex: 1, padding: '20px'}}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flex: 1, padding: '20px' }}>
           <Heading style={{ color: '#fff' }}> Inspired <br/> Technology <br/> Products</Heading>
         </div>
         </Layout>
@@ -114,7 +114,7 @@ const FooterSection = (props) => {
         <Layout style={{
           display: 'flex',
         }}>
-          <Col style={{ flex: 1, padding: '20px', }}>
+          <Col style={{ flex: 1, padding: '20px' }}>
             <Heading style={{ color: '#fff' }}> Contact</Heading>
             <ShowEmail />
           </Col>
@@ -131,14 +131,14 @@ const Index = () => {
         <HeroSection />
         <CutPathDiv top={'-12vh'} backgroundColor={'#4400ff'}>
           <Layout style={{
-              alignItems: 'center',
+              
             }}>
-            <div style={{ flex: 1, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '40px', paddingBottom: '40px' }}>
+            <div style={{ flex: 1, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', top: '30px' }}>
               <Heading style={{ color: '#fff' }}>Design first</Heading>
               <Paragraph style={{ color: '#fff' }}>Great products always start with an obsessive focus on end users. Excellence thereafter becomes the result of well-structured planning, design, measurement and iteration.</Paragraph>
             </div>
-            <div style={{ flex: 1 }}>
-              <img src="/static/phone.png" alt="stack logo" style={{ height: '80vh', width: '50vh', minHeight: '320px', minWidth: '200px'  }} />
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/static/phone.png" alt="phone design image"/>
             </div>
           </Layout>
         </CutPathDiv>
